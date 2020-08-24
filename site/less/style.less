@@ -185,7 +185,7 @@ h2 {
         height: 680px;
         width: 100vw;
         background-size: cover;
-        background-position-x: -300px;
+        background-position: right;
 
         .slide-content {
             height: 500px;
@@ -258,7 +258,7 @@ h2 {
     .slick-dots {
         width: 100%;
         position: absolute;
-        bottom: 100px;
+        bottom: 50px;
     }
 }
 
@@ -349,13 +349,10 @@ h2 {
             color: @cv_bidblue;
         }
         &:nth-child(even) {
-            color: @cv_bidlgblue;
-            .rt-info {
-                a {
-                    color: @cv_bidlgblue;
-                }
+            a {
+                color: @cv_bidlgblue;
             }
-        }        
+        }
         .rt-icon {
             max-width: 100%;
             height: auto;
@@ -566,11 +563,11 @@ h2 {
     .covid-slider {
         .slide {
             height: 520px;
-            background-position-x: 0;
+            background-position: center center;
             .slide-content {
                 position: absolute;
                 width: 70%;
-                bottom: 12%;
+                bottom: 20%;
                 right: 0;
                 margin: 0;
                 padding: 30px 60px 80px;
@@ -665,7 +662,7 @@ h2 {
                 position: absolute;
                 width: 65%;
                 height: 360px;
-                bottom: 20%;
+                bottom: 10%;
                 padding: 30px 240px 80px 120px;
                 .slide-info {
                     padding: 0 15px;
@@ -681,7 +678,7 @@ h2 {
         }
 
         .slick-arrow {
-            bottom: 55%;
+            bottom: 40%;
             top: auto;
 
             &.slick-prev {

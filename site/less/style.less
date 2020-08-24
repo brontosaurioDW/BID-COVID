@@ -292,8 +292,8 @@ h2 {
         .social-item {
             display: inline-block;
             .social-icon {
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 display: block;
                 background-size: contain;
                 &.fb-icon {
@@ -326,11 +326,12 @@ h2 {
         font-weight: 600;
     }
     .cv-message {
+        margin: 30px 0;
         color: @cv_bidlgblue;
         font-size: 26px;
         font-weight: 600;
         text-align: center;
-        text-transform: uppercase;   
+        text-transform: uppercase;
     }
     .btn.cv-nav {
         margin: 15px auto;
@@ -478,11 +479,18 @@ h2 {
     // Main Slider
 
     .covid-slider {
+        .slick-prev, 
+        .slick-next {
+            top: 60%;
+        }
         .slide {
             height: 540px;
             .slide-content {
                 height: 380px;
             }
+        }
+        .slick-dots {
+            bottom: 40px;
         }
     }
 
@@ -519,7 +527,6 @@ h2 {
         .slick-dots {
             width: 100%;
             position: absolute;
-            bottom: 100px;
         }
 
     }
@@ -551,10 +558,10 @@ h2 {
 
     // Main slider
 
-
     .covid-slider {
         .slide {
             height: 520px;
+            background-position-x: 0;
             .slide-content {
                 position: absolute;
                 width: 70%;
@@ -566,27 +573,13 @@ h2 {
                 .slide-title {
                     margin-bottom: 45px;
                     text-align: left;
-                    &::after {
-                        position: absolute;
-                        left: -100px;
-                        bottom: -15px;
-                        width: 200px;
-                        margin: 0;
-                    }
-                }
-
-                .slide-info {
-                    text-align: left;
-                }
-                .slide-anchor {
-                    text-align: left;
                 }
             }
         
         }
 
         .slick-arrow {
-            bottom: 55%;
+            bottom: 40%;
             top: auto;
             &.slick-prev {
                 right: 67%;
@@ -600,12 +593,57 @@ h2 {
 
         .slick-dots {
             width: 200px;
-            bottom: 100px;
             right: 27%;
         }
 
     }
 
+
+    .covid-subnav {
+        padding: 5px 0;
+        .nav-left {
+            a {
+                display: block;
+                margin-top: 5px;
+            }
+        }
+        .social-list {
+            margin: 0;
+        }
+    }
+
+
+    // Real time
+
+    .cv-realtime-container {
+        .rt-container {   
+            .rt-icon {
+                img {
+                    display: block;
+                    max-width: 100%;
+                    width: 80px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    // Answers & Areas
+
+    .cv-answers-container,
+    .cv-priorities-container {
+        .answer {
+            .answer-cont {
+                height: 270px;
+                -webkit-box-align: baseline;
+                -ms-flex-align: baseline;
+                align-items: baseline;
+                .answer-title {
+                    margin-top: 180px;
+                }
+            }
+        }
+    }
 
 }
 
@@ -624,13 +662,14 @@ h2 {
                 height: 360px;
                 bottom: 20%;
                 padding: 30px 240px 80px 120px;
-
-                .slide-title {
-                    &::after {
-                        left: -160px;
-                        bottom: -25px;
-                        width: 240px;
-                    }
+                .slide-info {
+                    padding: 0 15px;
+                    background-color: transparent;
+                    text-align: left;
+                }
+                .slide-anchor {
+                    background-color: transparent;   
+                    text-align: left;
                 }
             }
         
@@ -650,7 +689,7 @@ h2 {
         }
 
         .slick-dots {
-            bottom: 190px;
+            bottom: 100px;
             right: 500px;
         }
 

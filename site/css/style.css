@@ -274,6 +274,9 @@ h2 {
 .cv-realtime-container .rt-container:nth-child(even) {
   color: #29ABE2;
 }
+.cv-realtime-container .rt-container:nth-child(even) .rt-info a {
+  color: #29ABE2;
+}
 .cv-realtime-container .rt-container .rt-icon {
   max-width: 100%;
   height: auto;
@@ -446,14 +449,14 @@ h2 {
   }
   .cv-answers-container .answer .answer-cont,
   .cv-priorities-container .answer .answer-cont {
-    height: 270px;
+    height: 300px;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
   }
   .cv-answers-container .answer .answer-cont .answer-title,
   .cv-priorities-container .answer .answer-cont .answer-title {
-    margin-top: 180px;
+    margin-top: 200px;
   }
 }
 @media (min-width: 1400px) {

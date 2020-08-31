@@ -1,0 +1,179 @@
+html {
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #E2E2E4;
+}
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+h2 {
+  margin: 0 0 30px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #215B9C;
+  text-transform: uppercase;
+  text-align: center;
+}
+h3 {
+  margin: 30px 0 15px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #215B9C;
+  text-transform: uppercase;
+  text-align: center;
+}
+a {
+  color: #29ABE2;
+}
+ul {
+  padding-left: 15px;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  display: block;
+  margin: 30px auto;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 0;
+}
+.btn-primary {
+  color: #29ABE2;
+  border-color: #29ABE2;
+  background-color: transparent;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:hover {
+  color: #fff;
+  background-color: #29ABE2;
+  border-color: #29ABE2;
+  text-decoration: none;
+}
+.cover-bg {
+  width: 100%;
+  height: 250px;
+}
+.sub_main .cover-bg {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.sub_main .cover-bg h2 {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  padding: 5px 60px 5px 15px;
+  background-color: #215B9C;
+  color: #fff;
+}
+.sub_main.sub_respuestaf .cover-bg {
+  background-image: url('../img/sub-covers/respuestabanner.jpg');
+}
+.sub_main.sub_respuestac .cover-bg {
+  background-image: url('../img/sub-covers/cifrasbanner.jpg');
+}
+.sub_main.sub_apoyo .cover-bg {
+  background-image: url('../img/sub-covers/gobiernosnacionales.png');
+}
+.sub_main.sub_privado .cover-bg {
+  background-image: url('../img/sub-covers/sectorprivado.jpg');
+}
+.sub_main.sub_socios .cover-bg {
+  background-image: url('../img/sub-covers/strategyc.jpg');
+}
+.sub_main.sub_emprendedores .cover-bg {
+  background-image: url('../img/sub-covers/coperacionesbanner.jpg');
+}
+.sub_main.sub_innovacion .cover-bg {
+  background-image: url('../img/sub-covers/basededatos.jpg');
+}
+.covid-subnav {
+  padding: 15px 0;
+  background-color: #fff;
+  color: #215B9C;
+}
+.covid-subnav .nav-left,
+.covid-subnav .nav-right {
+  text-align: center;
+}
+.covid-subnav .nav-left a,
+.covid-subnav .nav-right a {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.covid-subnav .social-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.covid-subnav .social-list .social-item {
+  display: inline-block;
+}
+.covid-subnav .social-list .social-item .social-icon {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-size: contain;
+}
+.covid-subnav .social-list .social-item .social-icon.fb-icon {
+  background-image: url('../img/icons/social/fb.png');
+}
+.covid-subnav .social-list .social-item .social-icon.tw-icon {
+  background-image: url('../img/icons/social/twitter.png');
+}
+.covid-subnav .social-list .social-item .social-icon.in-icon {
+  background-image: url('../img/icons/social/in.png');
+}
+.covid-subnav .social-list .social-item .social-icon.mail-icon {
+  background-image: url('../img/icons/social/mail.png');
+}
+.covid-subnav h2 {
+  margin: 0;
+  color: #215B9C;
+  font-size: 1.6rem;
+}
+.covid-subnav.covid-subnav-bottom {
+  margin: 0 -15px;
+}
+.sub-content {
+  margin-top: -1px;
+  padding: 30px;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  h3 {
+    text-align: left;
+  }
+  .btn {
+    margin: 30px 0;
+  }
+  .sub-content {
+    padding: 30px 60px;
+  }
+}
+@media (min-width: 992px) {
+  .covid-subnav .nav-left {
+    padding-top: 5px;
+  }
+  .covid-subnav .nav-right .social-list {
+    margin: 0;
+  }
+}

@@ -1,0 +1,266 @@
+// Variables
+
+@cv_black: #333;
+@cv_white: #fff;
+@cv_grey: #E2E2E4;
+@cv_bidblue: #215B9C;
+@cv_bidlgblue: #29ABE2;
+
+
+
+// HTML
+
+html {
+    font-family: 'GothamHTF-Book', sans-serif;
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: @cv_grey;
+}
+
+
+// General classes
+
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+// Titles
+
+h2 {
+    margin: 0 0 30px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: @cv_bidblue;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    margin: 30px 0 15px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: @cv_bidblue;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a {
+    color: @cv_bidlgblue;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+// Buttons
+
+.btn {
+    display: block;
+    margin: 30px auto;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 2px solid;
+    border-radius: 0;
+}
+
+.btn-primary {
+    color: @cv_bidlgblue;
+    border-color: @cv_bidlgblue;
+    background-color: transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:hover {
+    color: @cv_white;
+    background-color: @cv_bidlgblue;
+    border-color: @cv_bidlgblue;
+    text-decoration: none;
+}
+
+
+// Covers
+
+.cover-bg {
+    width: 100%;
+    height: 250px;
+}
+
+.sub_main {
+    .cover-bg {
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        h2 {
+            position: absolute;
+            bottom: 60px;
+            right: 0;
+            padding: 5px 60px 5px 15px;
+            background-color: @cv_bidblue;
+            color: @cv_white;
+        }
+    } 
+    &.sub_respuestaf {
+        .cover-bg {
+            background-image: url('../img/sub-covers/respuestabanner.jpg');
+        }
+    }
+    &.sub_respuestac {
+        .cover-bg {
+            background-image: url('../img/sub-covers/cifrasbanner.jpg');
+        }
+    }
+    &.sub_apoyo {
+        .cover-bg {
+            background-image: url('../img/sub-covers/gobiernosnacionales.png');
+        }
+    }
+    &.sub_privado {
+        .cover-bg {
+            background-image: url('../img/sub-covers/sectorprivado.jpg');
+        }
+    }
+    &.sub_socios {
+        .cover-bg {
+            background-image: url('../img/sub-covers/strategyc.jpg');
+        }
+    }
+    &.sub_emprendedores {
+        .cover-bg {
+            background-image: url('../img/sub-covers/coperacionesbanner.jpg');
+        }
+    }
+    &.sub_innovacion {
+        .cover-bg {
+            background-image: url('../img/sub-covers/basededatos.jpg');
+        }
+    }
+
+
+    
+}
+
+
+// Sub-navs
+
+.covid-subnav {
+    padding: 15px 0;
+    background-color: @cv_white;
+    color: @cv_bidblue;
+    .nav-left, 
+    .nav-right {
+        text-align: center;
+
+        a {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.2rem;
+         }
+    }
+    .social-list {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        .social-item {
+            display: inline-block;
+            .social-icon {
+                width: 25px;
+                height: 25px;
+                display: block;
+                background-size: contain;
+                &.fb-icon {
+                    background-image: url('../img/icons/social/fb.png');
+                }
+                &.tw-icon {
+                    background-image: url('../img/icons/social/twitter.png');
+                }
+                &.in-icon {
+                    background-image: url('../img/icons/social/in.png');
+                }
+                &.mail-icon {
+                    background-image: url('../img/icons/social/mail.png');
+                }
+            }
+        }
+    }
+    h2 {
+        margin: 0;
+        color: @cv_bidblue;
+        font-size: 1.6rem;
+    }
+   &.covid-subnav-bottom {
+        margin: 0 -15px;
+    }
+}
+
+
+// Content
+
+.sub-content {
+    margin-top: -1px;
+    padding: 30px;
+    background-color: @cv_white;
+}
+
+
+
+@media (min-width: 576px) {}
+
+
+
+@media (min-width: 768px) {
+
+    h3 {
+        text-align: left;
+    }
+
+    .btn {
+        margin: 30px 0;
+    }
+
+    .sub-content {
+        padding: 30px 60px;
+    }
+
+
+
+}
+
+
+@media (min-width: 992px) {
+
+    .covid-subnav {
+        .nav-left {
+            padding-top: 5px;
+        }
+        .nav-right {
+            .social-list {
+                margin: 0;
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 1400px) {}

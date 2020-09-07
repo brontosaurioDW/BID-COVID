@@ -155,6 +155,11 @@ img {
             background-image: url('../img/sub-covers/basededatos.jpg');
         }
     }
+    &.sub_resumenes {
+        .cover-bg {
+            background-image: url('../img/sub-covers/resumenesbanner.jpg');
+        }
+    }
 
 
     
@@ -223,8 +228,73 @@ img {
 }
 
 
+// Briefings
 
-@media (min-width: 576px) {}
+.res-tile {
+    .res-bg {
+        height: 200px;
+        margin-bottom: 30px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    &.res_1 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_1.png');
+        }
+    }
+    &.res_2 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_2.jpg');
+        }
+    }
+    &.res_3 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_3.jpg');
+        }
+    }
+    &.res_4 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_4.jpg');
+        }
+    }
+    &.res_5 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_5.png');
+        }
+    }
+    &.res_6 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_6.jpg');
+        }
+    }
+    &.res_7 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_7.png');
+        }
+    }
+    &.res_8 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_8.jpg');
+        }
+    }
+    &.res_9 {
+        .res-bg {
+            background-image: url('../img/placeholders/briefings/res_9.jpg');
+        }
+    }
+    h4 {
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        padding: 5px 10px;
+        background-color: @cv_bidblue;
+        color: @cv_white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
 
 
 
@@ -262,5 +332,3 @@ img {
 
 }
 
-
-@media (min-width: 1400px) {}
